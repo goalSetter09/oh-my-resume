@@ -1,0 +1,46 @@
+{
+  "name": "oh-my-resume",
+  "version": "0.1.0",
+  "description": "AI-Powered Interview Preparation Agent System for OpenCode",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "oh-my-resume": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "bun build ./src/index.ts ./src/cli.ts --outdir ./dist --target node",
+    "dev": "bun run --watch src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "opencode",
+    "ai",
+    "agent",
+    "interview",
+    "resume",
+    "career"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@opencode-ai/sdk": ">=1.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/oh-my-resume"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
