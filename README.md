@@ -37,7 +37,7 @@ npx oh-my-resume install
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/oh-my-resume.git
+git clone https://github.com/goalSetter09/oh-my-resume.git
 cd oh-my-resume
 
 # Install dependencies
@@ -379,13 +379,13 @@ npm publish --access public
 
 ```json
 {
-  "name": "@your-username/oh-my-resume"
+  "name": "@goalSetter09/oh-my-resume"
 }
 ```
 
 그러면 설치 명령어는:
 ```bash
-npx @your-username/oh-my-resume install
+npx @goalSetter09/oh-my-resume install
 ```
 
 ### 로컬 테스트 (npm 퍼블리시 전)
@@ -420,7 +420,7 @@ GitHub에 레포지토리를 푸시한 후 다음 단계를 완료하세요.
 {
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/oh-my-resume"
+    "url": "https://github.com/goalSetter09/oh-my-resume"
   }
 }
 ```
@@ -431,7 +431,7 @@ VS Code 자동완성을 지원하려면 `src/cli.ts`에서 `$schema`를 추가�
 
 ```typescript
 const DEFAULT_CONFIG = {
-  $schema: "https://raw.githubusercontent.com/YOUR_USERNAME/oh-my-resume/main/assets/oh-my-resume.schema.json",
+  $schema: "https://raw.githubusercontent.com/goalSetter09/oh-my-resume/main/assets/oh-my-resume.schema.json",
   agents: {
     "interview-prep": {
       model: "anthropic/claude-sonnet-4-5",
@@ -439,8 +439,6 @@ const DEFAULT_CONFIG = {
   },
 }
 ```
-
-> **Important**: `YOUR_USERNAME`을 실제 GitHub 사용자명으로 변경하세요.
 
 ### Step 3: 다시 빌드 및 퍼블리시
 
@@ -455,7 +453,7 @@ npm publish --access public
 
 ```jsonc
 {
-  "$schema": "https://raw.githubusercontent.com/YOUR_USERNAME/oh-my-resume/main/assets/oh-my-resume.schema.json",
+  "$schema": "https://raw.githubusercontent.com/goalSetter09/oh-my-resume/main/assets/oh-my-resume.schema.json",
   "agents": {
     "interview-prep": {
       "model": "anthropic/claude-sonnet-4-5"

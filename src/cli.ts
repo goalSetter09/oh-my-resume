@@ -5,6 +5,7 @@ import { homedir } from "os"
 import { join } from "path"
 
 const DEFAULT_CONFIG = {
+  $schema: "https://raw.githubusercontent.com/goalSetter09/oh-my-resume/main/assets/oh-my-resume.schema.json",
   agents: {
     "interview-prep": {
       model: "anthropic/claude-sonnet-4-5",
